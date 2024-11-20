@@ -6,6 +6,7 @@ import BuyCrypto from "./buy-form";
 import SellCrypto from "./sell-form";
 import CardSlider from "./slider";
 import { useEffect, useRef, useState, useCallback } from "react";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Hero = () => {
   const [isBuying, setIsBuyingOpen] = useState(false);
@@ -133,9 +134,14 @@ const Hero = () => {
           >
             <button
               onClick={() => setIsBuyingOpen(false)}
-              className="bg-[url('/images/closed.svg')] bg-no-repeat bg-contain w-5 h-5 absolute top-0 right-0 mr-8 mt-8 dark:invert"
+              className="absolute top-0 right-0 mr-8 mt-8 dark:invert"
               aria-label="Close Buy Modal"
-            ></button>
+            >
+              <Icon
+                icon="tabler:currency-xrp"
+                className="text-white hover:text-primary text-24 inline-block me-2"
+              />
+            </button>
             <BuyCrypto />
           </div>
         </div>
@@ -148,9 +154,14 @@ const Hero = () => {
           >
             <button
               onClick={() => setIsSellingOpen(false)}
-              className="bg-[url('/images/closed.svg')] bg-no-repeat bg-contain w-5 h-5 absolute top-0 right-0 mr-8 mt-8 dark:invert"
+              className="absolute top-0 right-0 mr-8 mt-8 dark:invert"
               aria-label="Close Sell Modal"
-            ></button>
+            >
+              <Icon
+                icon="tabler:currency-xrp"
+                className="text-white hover:text-primary text-24 inline-block me-2"
+              />
+            </button>
             <SellCrypto />
           </div>
         </div>

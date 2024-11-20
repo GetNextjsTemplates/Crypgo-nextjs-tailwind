@@ -10,6 +10,7 @@ import MobileHeaderLink from "../Header/Navigation/MobileHeaderLink";
 import Signin from "@/components/Auth/SignIn";
 import SignUp from "@/components/Auth/SignUp";
 import { useTheme } from "next-themes";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 const Header: React.FC = () => {
   const pathUrl = usePathname();
@@ -125,9 +126,14 @@ const Header: React.FC = () => {
                 >
                   <button
                     onClick={() => setIsSignInOpen(false)}
-                    className="bg-[url('/images/closed.svg')] bg-no-repeat bg-contain w-5 h-5 absolute top-0 right-0 mr-8 mt-8 dark:invert"
+                    className="absolute top-0 right-0 mr-8 mt-8 dark:invert"
                     aria-label="Close Sign In Modal"
-                  ></button>
+                  >
+                    <Icon
+                      icon="tabler:currency-xrp"
+                      className="text-white hover:text-primary text-24 inline-block me-2"
+                    />
+                  </button>
                   <Signin />
                 </div>
               </div>
@@ -149,9 +155,14 @@ const Header: React.FC = () => {
                 >
                   <button
                     onClick={() => setIsSignUpOpen(false)}
-                    className="bg-[url('/images/closed.svg')] bg-no-repeat bg-contain w-5 h-5 absolute top-0 right-0 mr-8 mt-8 dark:invert"
+                    className="absolute top-0 right-0 mr-8 mt-8 dark:invert"
                     aria-label="Close Sign Up Modal"
-                  ></button>
+                  >
+                    <Icon
+                      icon="tabler:currency-xrp"
+                      className="text-white hover:text-primary text-24 inline-block me-2"
+                    />
+                  </button>
                   <SignUp />
                 </div>
               </div>
