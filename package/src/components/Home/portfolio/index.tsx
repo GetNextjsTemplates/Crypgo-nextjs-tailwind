@@ -11,7 +11,7 @@ const Portfolio = () => {
           <motion.div
             whileInView={{ y: 0, opacity: 1 }}
             initial={{ y: "-100%", opacity: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.6 }}
             className="lg:-ml-32"
           >
             <Image
@@ -25,7 +25,7 @@ const Portfolio = () => {
           <motion.div
             whileInView={{ y: 0, opacity: 1 }}
             initial={{ y: "100%", opacity: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.6 }}
           >
             <p className="sm:text-28 text-18 text-muted mb-4">
               Cryptocurrency <span className="text-primary">Portfolio</span>

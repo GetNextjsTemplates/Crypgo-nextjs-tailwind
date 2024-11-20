@@ -55,7 +55,7 @@ export const Introduction = () => {
         )}
 
         <div className="flex item-center justify-between">
-          <h3 className=" text-black text-2xl mt-4 font-semibold mb-6 dark:text-white">
+          <h3 className=" text-2xl mt-4 font-semibold mb-6 text-white">
             Pacakge Versions
           </h3>
           <button onClick={() => setDocNavbarOpen(true)} className="p-0">

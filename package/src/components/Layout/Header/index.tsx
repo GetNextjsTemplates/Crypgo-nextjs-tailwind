@@ -70,8 +70,8 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`fixed top-0 z-40 w-full  pb-5 transition-all duration-300 ${
-        sticky ? " shadow-lg bg-darkmode pt-5" : "shadow-none pt-14"
+      className={`fixed top-0 z-40 w-full pb-5 transition-all duration-300 ${
+        sticky ? " shadow-lg bg-darkmode pt-5" : "shadow-none md:pt-14 pt-5"
       }`}
     >
       <div className="lg:py-0 py-2">
@@ -82,7 +82,7 @@ const Header: React.FC = () => {
               <HeaderLink key={index} item={item} />
             ))}
           </nav>
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center gap-4">
             {/* <button
               aria-label="Toggle theme"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
@@ -172,35 +172,21 @@ const Header: React.FC = () => {
         )}
         <div
           ref={mobileMenuRef}
-          className={`lg:hidden fixed top-0 right-0 h-full w-full bg-white dark:bg-darkmode shadow-lg transform transition-transform duration-300 max-w-xs ${
+          className={`lg:hidden fixed top-0 right-0 h-full w-full bg-darkmode shadow-lg transform transition-transform duration-300 max-w-xs ${
             navbarOpen ? "translate-x-0" : "translate-x-full"
           } z-50`}
         >
           <div className="flex items-center justify-between p-4">
             <h2 className="text-lg font-bold text-midnight_text dark:text-midnight_text">
-              Menu
+              <Logo />
             </h2>
+
+            {/*  */}
             <button
               onClick={() => setNavbarOpen(false)}
-              aria-label="Close mobile menu"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                className="dark:text-midnight_text"
-              >
-                <path
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
+              className="bg-[url('/images/closed.svg')] bg-no-repeat bg-contain w-5 h-5 absolute top-0 right-0 mr-8 mt-8 dark:invert"
+              aria-label="Close menu Modal"
+            ></button>
           </div>
           <nav className="flex flex-col items-start p-4">
             {headerData.map((item, index) => (

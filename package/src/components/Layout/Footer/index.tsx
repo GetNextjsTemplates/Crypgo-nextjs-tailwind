@@ -40,7 +40,7 @@ const Footer: FC = () => {
               </Link>
             </div>
             <h3 className="text-white text-24 font-medium sm:mt-20 mt-12">
-              2024 Copright | Crypgo
+              2025 Copright | Crypgo
             </h3>
           </div>
           <div className="lg:col-span-2 md:col-span-3 col-span-6">

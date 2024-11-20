@@ -51,7 +51,10 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative md:pt-40 md:pb-28 py-20 overflow-hidden z-1" id="main-banner">
+    <section
+      className="relative md:pt-40 md:pb-28 py-20 overflow-hidden z-1"
+      id="main-banner"
+    >
       <div className="container mx-auto lg:max-w-screen-xl px-4">
         <div className="grid grid-cols-12">
           <motion.div {...leftAnimation} className="lg:col-span-5 col-span-12">
@@ -70,7 +73,7 @@ const Hero = () => {
               Buy and Sell <span className="text-primary">Crypto</span> of your{" "}
               <span className="text-primary">choice</span>!
             </h1>
-            <div className="flex items-center gap-8">
+            <div className="flex items-center md:justify-start justify-center gap-8">
               <button
                 className="bg-primary border border-primary rounded-lg text-21 font-medium hover:bg-transparent hover:text-primary text-darkmode py-2 px-7 z-50"
                 onClick={() => setIsBuyingOpen(true)}
@@ -84,7 +87,7 @@ const Hero = () => {
                 Sell Crypto
               </button>
             </div>
-            <div className="flex items-center gap-12 mt-20">
+            <div className="flex items-center md:justify-start justify-center gap-12 mt-20">
               <Link href="#" className="hover:scale-110 duration-300">
                 <Image
                   src="/images/hero/playstore.png"
