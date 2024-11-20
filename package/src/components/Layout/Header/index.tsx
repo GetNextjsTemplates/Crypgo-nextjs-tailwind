@@ -82,7 +82,7 @@ const Header: React.FC = () => {
               <HeaderLink key={index} item={item} />
             ))}
           </nav>
-          <div className="flex  items-center space-x-4">
+          <div className="flex items-center space-x-4">
             {/* <button
               aria-label="Toggle theme"
               onClick={() => setTheme(theme === "dark" ? "light" : "dark")}

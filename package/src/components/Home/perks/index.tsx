@@ -19,7 +19,7 @@ const Perks = () => {
                 key={index}
                 className="text-center flex items-center justify-end flex-col"
               >
-                <div className="bg-primary bg-opacity-25 p-4 rounded-full w-fit">
+                <div className="bg-primary bg-opacity-25 backdrop-blur-sm p-4 rounded-full w-fit">
                   <Image
                     src={item.icon}
                     alt={item.title}

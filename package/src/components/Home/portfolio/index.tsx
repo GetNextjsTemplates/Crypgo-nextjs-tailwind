@@ -1,20 +1,32 @@
+"use client";
 import Image from "next/image";
 import { portfolioData } from "@/app/api/data";
+import { motion } from "framer-motion";
 
 const Portfolio = () => {
   return (
-    <section className="md:pt-48 sm:pt-28 pt-12">
-      <div className="container mx-auto lg:max-w-screen-xl px-4">
+    <section className="md:pt-48 sm:pt-28 pt-12" id="portfolio">
+      <div className="container mx-auto lg:max-w-screen-xl px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 items-center gap-20">
-          <div className="lg:-ml-32">
+          <motion.div
+            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ y: "-100%", opacity: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="lg:-ml-32"
+          >
             <Image
               src="/images/portfolio/img-portfolio.png"
-              alt="image"
+              alt="Crypto Portfolio"
               width={780}
               height={700}
             />
-          </div>
-          <div className="">
+          </motion.div>
+
+          <motion.div
+            whileInView={{ y: 0, opacity: 1 }}
+            initial={{ y: "100%", opacity: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
             <p className="sm:text-28 text-18 text-muted mb-4">
               Cryptocurrency <span className="text-primary">Portfolio</span>
             </p>
@@ -26,7 +38,8 @@ const Portfolio = () => {
               Coinbase has a variety of features that make it the best
               <br className="md:block hidden" /> place to start trading.
             </p>
-            <table className="w-80%">
+
+            <table className="w-full sm:w-[80%]">
               <tbody>
                 {portfolioData.map((item, index) => (
                   <tr
@@ -52,7 +65,7 @@ const Portfolio = () => {
                 ))}
               </tbody>
             </table>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

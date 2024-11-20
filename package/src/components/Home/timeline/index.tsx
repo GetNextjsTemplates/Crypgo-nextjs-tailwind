@@ -4,7 +4,7 @@ import { motion, useInView } from "framer-motion";
 
 const TimeLine = () => {
   return (
-    <section className="pt-40">
+    <section className="pt-40" id="development">
       <div className="container mx-auto lg:max-w-screen-xl md:max-w-screen-md lg:px-16 px-4">
         <div className="text-center">
           <p className="text-muted sm:text-28 text-18 mb-9">

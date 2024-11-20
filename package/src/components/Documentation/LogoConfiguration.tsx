@@ -2,7 +2,7 @@ export const LogoConfiguration = () => {
   return (
     <>
       <h3 className=" text-xl font-semibold mt-8 text-white">Logo</h3>
-      <div className="p-6 rounded-md border mt-4 border-border dark:border-dark_border">
+      <div className="p-6 rounded-md border mt-4 border-dark_border border-opacity-60">
         <p className="text-base font-medium text-muted text-opacity-60 flex lg:flex-row flex-col">
           1. Change Logo over here :{" "}
           <span className="font-semibold text-base overflow-x-auto">
@@ -10,7 +10,7 @@ export const LogoConfiguration = () => {
             src/components/Layout/Header/Logo/index.tsx
           </span>{" "}
         </p>
-        <div className="py-4 px-3 rounded-md bg-black mt-8">
+        <div className="py-4 px-3 rounded-md bg-dark_grey mt-8">
           <div className="text-sm text-gray-400">
             <p>&#x3C;Link href=&#x22;/&#x22;&#x3E;</p>
             <p className="ms-2">&#x3C;Image</p>

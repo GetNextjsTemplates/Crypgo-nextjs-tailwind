@@ -51,7 +51,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative md:pt-40 md:pb-28 py-20 overflow-hidden z-1">
+    <section className="relative md:pt-40 md:pb-28 py-20 overflow-hidden z-1" id="main-banner">
       <div className="container mx-auto lg:max-w-screen-xl px-4">
         <div className="grid grid-cols-12">
           <motion.div {...leftAnimation} className="lg:col-span-5 col-span-12">

@@ -5,7 +5,7 @@ import { useRef } from "react";
 
 const Work = () => {
   const ref = useRef(null);
-  const inView = useInView(ref); // Trigger animation once
+  const inView = useInView(ref);
 
   const TopAnimation = {
     initial: { y: "-100%", opacity: 0 },
@@ -35,10 +35,13 @@ const Work = () => {
   ];
 
   return (
-    <section className="md:pt-28">
+    <section className="md:pt-28" id="work">
       <div className="container mx-auto lg:max-w-screen-xl px-4">
         <div ref={ref} className="grid grid-cols-12">
-          <motion.div {...TopAnimation} className="lg:col-span-7 col-span-12">
+          <motion.div
+            {...bottomAnimation}
+            className="lg:col-span-7 col-span-12"
+          >
             <p className="sm:text-28 text-18 text-white">
               Work with <span className="text-primary">us</span>
             </p>
@@ -61,7 +64,7 @@ const Work = () => {
               ))}
             </div>
           </motion.div>
-          <motion.div {...bottomAnimation} className="lg:col-span-5 col-span-12">
+          <motion.div {...TopAnimation} className="lg:col-span-5 col-span-12">
             <div className="2xl:-mr-40 mt-9 flex justify-center">
               <Image
                 src="/images/work/img-work-with-us.png"
