@@ -75,7 +75,7 @@ export const PackageStructure = () => {
                         </div>
                         <div className="flex">
                           <div className="flex flex-col justify-between gap-2 mt-2">
-                            {Counts.slice(0, 26).map((item) => {
+                            {Counts.slice(0, 22).map((item) => {
                               return <p className="text-xl text-white">|</p>;
                             })}
                           </div>
@@ -93,7 +93,7 @@ export const PackageStructure = () => {
                               </div>
                               <div className="flex">
                                 <div className="flex flex-col justify-between gap-2 mt-2">
-                                  {Counts.slice(0, 20).map((item) => {
+                                  {Counts.slice(0, 16).map((item) => {
                                     return (
                                       <p className="text-xl text-white">|</p>
                                     );
@@ -116,7 +116,7 @@ export const PackageStructure = () => {
                                     </div>
                                     <div className="flex">
                                       <div className="flex flex-col justify-between gap-2 mt-2">
-                                        {Counts.slice(0, 10).map(
+                                        {Counts.slice(0, 5).map(
                                           (item, index) => {
                                             return (
                                               <p
@@ -208,63 +208,7 @@ export const PackageStructure = () => {
                                                 icon="tabler:folder"
                                                 className="text-primary text-base inline-block me-2"
                                               />
-                                              blog
-                                            </span>
-                                          </div>
-                                        </li>
-                                        <li className="py-2">
-                                          <div className="flex items-center gap-3">
-                                            <p className="text-xl text-white">
-                                              |—
-                                            </p>
-                                            <span className="font-medium text-muted">
-                                              <Icon
-                                                icon="tabler:folder"
-                                                className="text-primary text-base inline-block me-2"
-                                              />
-                                              cause
-                                            </span>
-                                          </div>
-                                        </li>
-                                        <li className="py-2">
-                                          <div className="flex items-center gap-3">
-                                            <p className="text-xl text-white">
-                                              |—
-                                            </p>
-                                            <span className="font-medium text-muted">
-                                              <Icon
-                                                icon="tabler:folder"
-                                                className="text-primary text-base inline-block me-2"
-                                              />
-                                              contact
-                                            </span>
-                                          </div>
-                                        </li>
-                                        <li className="py-2">
-                                          <div className="flex items-center gap-3">
-                                            <p className="text-xl text-white">
-                                              |—
-                                            </p>
-                                            <span className="font-medium text-muted">
-                                              <Icon
-                                                icon="tabler:folder"
-                                                className="text-primary text-base inline-block me-2"
-                                              />
                                               documentation
-                                            </span>
-                                          </div>
-                                        </li>
-                                        <li className="py-2">
-                                          <div className="flex items-center gap-3">
-                                            <p className="text-xl text-white">
-                                              |—
-                                            </p>
-                                            <span className="font-medium text-muted">
-                                              <Icon
-                                                icon="tabler:folder"
-                                                className="text-primary text-base inline-block me-2"
-                                              />
-                                              events
                                             </span>
                                           </div>
                                         </li>

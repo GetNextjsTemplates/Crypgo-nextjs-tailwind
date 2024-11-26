@@ -13,25 +13,17 @@ export const LogoConfiguration = () => {
         <div className="py-4 px-3 rounded-md bg-dark_grey mt-8">
           <div className="text-sm text-gray-400">
             <p>&#x3C;Link href=&#x22;/&#x22;&#x3E;</p>
-            <p className="ms-2">&#x3C;Image</p>
-            <p className="ms-3">src=&#x22;/images/logo/logo.svg&#x22;</p>
-            <p className="ms-3">alt=&#x22;logo&#x22;</p>
-            <p className="ms-3">width={160}</p>
-            <p className="ms-3">height={50}</p>
-            <p className="ms-3">quality={100}</p>
-            <p className="ms-3">className=&#x27;dark:hidden&#x27;</p>
-            <p>/&#x3E;</p>
-            <p className="ms-2">&#x3C;Image</p>
-            <p className="ms-5">
-              src=&#x22;/images/footer/footer-logo-white.svg&#x22;
+            <p>&#x3C;Image</p>
+            <p>src=&#x22;/images/logo/logo.svg&#x22;</p>
+            <p>alt=&#x22;logo&#x22;</p>
+            <p>width={160}</p>
+            <p>height={50}</p>
+            <p>quality={100}</p>
+            <p>
+              style=&#x7B;width: &#x22;auto&#x22;, height:
+              &#x22;auto&#x22;&#x7D;
             </p>
-            <p className="ms-5">alt=&#x22;logo&#x22;</p>
-            <p className="ms-5">width={160}</p>
-            <p className="ms-5">height={50}</p>
-            <p className="ms-5">quality={100}</p>
-            <p className="ms-5">className=&#x27;dark:block hidden&#x27;</p>
-            <p className="ms-2">/&#x3E;</p>
-            <p className="ms-2">&#x3C;/Link&#x3E;</p>
+            <p>/&#x3E;</p>
           </div>
         </div>
       </div>
