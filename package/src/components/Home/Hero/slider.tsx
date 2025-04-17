@@ -1,8 +1,8 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import { pricedeta } from "@/app/api/data";
-import Image from "next/image";
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick.css'
+import 'slick-carousel/slick/slick-theme.css'
+import { pricedeta } from '@/app/api/data'
+import Image from 'next/image'
 
 const CardSlider = () => {
   const settings = {
@@ -14,7 +14,7 @@ const CardSlider = () => {
     speed: 300,
     slidesToShow: 4,
     slidesToScroll: 1,
-    cssEase: "ease-in-out",
+    cssEase: 'ease-in-out',
     responsive: [
       {
         breakpoint: 479,
@@ -35,37 +35,36 @@ const CardSlider = () => {
         },
       },
     ],
-  };
+  }
   return (
-    <div className="lg:-mt-16 mt-16">
+    <div className='lg:-mt-16 mt-16'>
       <Slider {...settings}>
         {pricedeta.map((item, index) => (
-          <div key={index} className="pr-6">
-            <div className="px-5 py-6 bg-dark_grey bg-opacity-80 rounded-xl">
-              <div className="flex items-center gap-5">
+          <div key={index} className='pr-6'>
+            <div className='px-5 py-6 bg-dark_grey/80 rounded-xl'>
+              <div className='flex items-center gap-5'>
                 <div
-                  className={`${item.background} ${item.padding} rounded-full`}
-                >
+                  className={`${item.background} ${item.padding} rounded-full`}>
                   <Image
                     src={item.icon}
-                    alt="icon"
+                    alt='icon'
                     width={item.width}
                     height={item.height}
                   />
                 </div>
-                <p className="text-white text-xs font-normal ">
-                  <span className="text-16 font-bold mr-2">{item.title}</span>
+                <p className='text-white text-xs font-normal '>
+                  <span className='text-16 font-bold mr-2'>{item.title}</span>
                   {item.short}
                 </p>
               </div>
-              <div className="flex justify-between mt-7">
-                <div className="">
-                  <p className="text-16 font-bold text-white mb-0 leading-none">
+              <div className='flex justify-between mt-7'>
+                <div className=''>
+                  <p className='text-16 font-bold text-white mb-0 leading-none'>
                     {item.price}
                   </p>
                 </div>
-                <div className="">
-                  <span className="text-error text-xs">{item.mark}</span>
+                <div className=''>
+                  <span className='text-error text-xs'>{item.mark}</span>
                 </div>
               </div>
             </div>
@@ -73,7 +72,7 @@ const CardSlider = () => {
         ))}
       </Slider>
     </div>
-  );
-};
+  )
+}
 
-export default CardSlider;
+export default CardSlider

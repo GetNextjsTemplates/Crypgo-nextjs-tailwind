@@ -1,17 +1,132 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  --container-screen-xl: 75rem;
+  --container-screen-2xl: 83.75rem;
+
+  --shadow-cause-shadow: 0px 4px 17px 0px #00000008;
+
+  --transition-duration-150: 150ms;
+
+  --spacing-8xl: 75rem;
+  --spacing-25: 35.625rem;
+  --spacing-29: 28rem;
+  --spacing-45: 45rem;
+  --spacing-50: 50rem;
+  --spacing-51: 54.375rem;
+  --spacing-85: 21rem;
+  --spacing-94: 22.5rem;
+  --spacing-120: 120rem;
+  --spacing-6_25: 6.25rem;
+  --spacing-70\%: 70%;
+  --spacing-40\%: 40%;
+  --spacing-30\%: 30%;
+  --spacing-80\%: 80%;
+  --spacing-8_5: 8.5rem;
+  --spacing-3_75: 3.75rem;
+
+  --inset-5\%: 5%;
+  --inset-35\%: 35%;
+
+  --z-index-1: 1;
+  --z-index-2: 2;
+  --z-index-999: 999;
+
+  --color-primary: #99e39e;
+  --color-secondary: #1dc8cd;
+  --color-midnight_text: #263238;
+  --color-muted: #d8dbdb;
+  --color-error: #cf3127;
+  --color-warning: #f7931a;
+  --color-light_grey: #505050;
+  --color-grey: #f5f7fa;
+  --color-dark_grey: #1e2229;
+  --color-border: #e1e1e1;
+  --color-success: #3cd278;
+  --color-section: #737373;
+  --color-darkmode: #000510;
+  --color-darklight: #0c372a;
+  --color-dark_border: #959595;
+  --color-tealGreen: #477e70;
+  --color-charcoalGray: #666c78;
+  --color-deepSlate: #282c36;
+  --color-slateGray: #2f3543;
+
+  --text-14: 0.875rem;
+  --text-14--line-height: 1.225rem;
+  --text-16: 1rem;
+  --text-16--line-height: 1.6875rem;
+  --text-17: 1.0625rem;
+  --text-17--line-height: 1.4875rem;
+  --text-18: 1.125rem;
+  --text-18--line-height: 1.5rem;
+  --text-21: 1.3125rem;
+  --text-21--line-height: 1.875rem;
+  --text-22: 1.375rem;
+  --text-22--line-height: 2rem;
+  --text-24: 1.5rem;
+  --text-24--line-height: 2rem;
+  --text-28: 1.75rem;
+  --text-28--line-height: 2.25rem;
+  --text-30: 1.875rem;
+  --text-30--line-height: 2.25rem;
+  --text-36: 2.25rem;
+  --text-36--line-height: 2.625rem;
+  --text-40: 2.5rem;
+  --text-40--line-height: 3rem;
+  --text-44: 2.75rem;
+  --text-44--line-height: 1.3;
+  --text-54: 3.375rem;
+  --text-54--line-height: 1.2;
+  --text-70: 4.375rem;
+  --text-70--line-height: 1.2;
+  --text-76: 4.75rem;
+  --text-76--line-height: 1.2;
+  --text-86: 5.375rem;
+  --text-86--line-height: 1.2;
+
+  --background-image-start: url('/images/work/bg-start.png');
+  --background-image-perk: url('/images/perks/perk-bg.png');
+
+  --blur-220: 220px;
+  --blur-400: 400px;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply w-full max-w-8xl mx-auto;
+  }
+}
 
 html {
   scroll-behavior: smooth;
 }
 
-section{
+section {
   @apply bg-darkmode;
 }
 
-.blog-details p, .blog-details hr {
-  @apply mb-8 ;
+.blog-details p,
+.blog-details hr {
+  @apply mb-8;
 }
 
 .blog-details hr {
