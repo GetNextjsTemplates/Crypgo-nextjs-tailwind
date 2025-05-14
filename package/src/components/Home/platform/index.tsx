@@ -18,10 +18,10 @@ const Platform = () => {
           <div className='lg:col-span-4 col-span-12'>
             <div className='flex lg:justify-end lg:mt-0 mt-7 justify-center'>
               <Link
-                href='#'
+                href='https://www.framer.com/'
                 className='flex items-center gap-2.5 text-darkmode bg-primary hover:bg-primary/80 border border-primary py-3 px-5 rounded-lg sm:text-21 text-18 font-medium'>
                 Get template
-                <Image src={"/images/icons/icon-arrow.svg"} alt="icon" width={20} height={20}/>
+                <Image src={"/images/icons/icon-arrow.svg"} alt="icon" width={20} height={20} />
               </Link>
             </div>
           </div>

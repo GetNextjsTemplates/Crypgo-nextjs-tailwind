@@ -72,9 +72,9 @@ const Hero = () => {
             </div>
             <div className='flex items-center md:justify-start justify-center gap-8'>
               <button
-                className='bg-primary hover:bg-primary/80 flex items-center gap-2 border border-primary rounded-lg text-21 font-medium text-darkmode py-2 px-7 cursor-pointer'
+                className='bg-primary hover:bg-primary/80 flex items-center gap-2 border border-primary rounded-lg font-semibold text-darkmode py-3 px-7 cursor-pointer'
                 onClick={() => setIsBuyingOpen(true)}>
-                Buy Crypto
+                Explore More
                 <Image src={"/images/icons/icon-arrow.svg"} alt='arrow-icon' width={20} height={20}/>
               </button>
             </div>

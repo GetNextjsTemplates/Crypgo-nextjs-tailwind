@@ -15,7 +15,7 @@ const Footer: FC = () => {
             <Logo />
             <p className='text-white/60'>Transform your crypto business with Crypgo Framer, a template for startups and blockchain services.</p>
             <div className='flex gap-6 items-center relative z-1'>
-              <Link href='#' className='group'>
+              <Link href='https://www.facebook.com/' className='group'>
                 <Icon
                   icon='fa6-brands:facebook-f'
                   width='24'
@@ -23,7 +23,7 @@ const Footer: FC = () => {
                   className='text-white group-hover:text-primary'
                 />
               </Link>
-              <Link href='#' className='group'>
+              <Link href='https://www.instagram.com/' className='group'>
                 <Icon
                   icon='fa6-brands:instagram'
                   width='24'
@@ -31,7 +31,7 @@ const Footer: FC = () => {
                   className='text-white group-hover:text-primary'
                 />
               </Link>
-              <Link href='#' className='group'>
+              <Link href='https://www.twitter.com/' className='group'>
                 <Icon
                   icon='fa6-brands:x-twitter'
                   width='24'
@@ -56,7 +56,7 @@ const Footer: FC = () => {
             </ul>
           </div>
           <div className='lg:col-span-2 md:col-span-3 col-span-6'>
-            <h4 className='text-white mb-4 font-medium text-24'>Information</h4>
+            <h4 className='text-white mb-4 font-medium text-24'>Other Pages</h4>
             <ul>
               {footerlabels.map((item, index) => (
                 <li key={index} className='pb-4'>
