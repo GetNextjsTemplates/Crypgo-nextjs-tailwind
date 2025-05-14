@@ -71,12 +71,11 @@ const Hero = () => {
               <p className='text-white'>Trade cryptocurrencies with ease, security, and advanced features on our cutting-edge platform.</p>
             </div>
             <div className='flex items-center md:justify-start justify-center gap-8'>
-              <button
-                className='bg-primary hover:bg-primary/80 flex items-center gap-2 border border-primary rounded-lg font-semibold text-darkmode py-3 px-7 cursor-pointer'
-                onClick={() => setIsBuyingOpen(true)}>
+              <Link href={"/#work"}
+                className='bg-primary hover:bg-primary/80 flex items-center gap-2 border border-primary rounded-lg font-semibold text-darkmode py-3 px-7 cursor-pointer'>
                 Explore More
                 <Image src={"/images/icons/icon-arrow.svg"} alt='arrow-icon' width={20} height={20}/>
-              </button>
+              </Link>
             </div>
           </motion.div>
           <motion.div

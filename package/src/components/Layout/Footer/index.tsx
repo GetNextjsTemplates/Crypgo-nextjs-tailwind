@@ -77,7 +77,7 @@ const Footer: FC = () => {
             </div>
           </div>
         </div>
-        <p className='text-white/40 text-center py-8 border-t border-white/20'>Copyright ©2025 Crypgo. All rights reserved</p>
+        <p className='text-white/40 text-center py-8 border-t border-white/20'>Design & Develop by <Link className='hover:text-primary' href={"https://getnextjstemplates.com/"}>GetNextjsTemplates.com</Link></p>
       </div>
     </footer>
   )
