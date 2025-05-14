@@ -4,7 +4,7 @@ import { Icon } from '@iconify/react'
 
 const Upgrade = () => {
   return (
-    <section className='md:py-40 py-20' id='upgrade'>
+    <section className='py-20' id='upgrade'>
       <div className='container px-4'>
         <div className='grid lg:grid-cols-2 gap-10 items-center'>
           <div>

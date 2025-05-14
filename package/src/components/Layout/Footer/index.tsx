@@ -72,8 +72,8 @@ const Footer: FC = () => {
           <div className='lg:col-span-3 md:col-span-4 col-span-6'>
             <h3 className='text-white text-24 font-medium mb-4'>Download app</h3>
             <div className='flex flex-col gap-4'>
-              <Image src={"/images/footer/app-store-bedge.svg"} alt='play-store-bedge' width={126} height={23} />
-              <Image src={"/images/footer/app-store.svg"} alt='play-store-bedge' width={126} height={23} />
+              <Link href={"https://www.google.com/"}><Image src={"/images/footer/app-store-bedge.svg"} alt='play-store-bedge' width={126} height={23} /></Link>
+              <Link href={"https://www.apple.com/"}><Image src={"/images/footer/app-store.svg"} alt='play-store-bedge' width={126} height={23} /></Link>
             </div>
           </div>
         </div>

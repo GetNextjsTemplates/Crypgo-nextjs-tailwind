@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 const Portfolio = () => {
   return (
-    <section className='md:pt-48 sm:pt-28 pt-12' id='portfolio'>
+    <section className='pt-12' id='portfolio'>
       <div className='container px-4 sm:px-6'>
         <div className='grid lg:grid-cols-2 items-center gap-20'>
           <motion.div
