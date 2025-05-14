@@ -81,7 +81,7 @@ const Header: React.FC = () => {
               <HeaderLink key={index} item={item} />
             ))}
           </nav>
-          <Link href={"https://calendly.com/"} className='hidden lg:block bg-primary/100 border border-primary hover:bg-primary/80 rounded-lg font-semibold py-2.5 px-5 z-50'>
+          <Link href={"https://calendly.com/"} className='hidden lg:block text-black bg-primary/100 border border-primary hover:bg-primary/80 rounded-lg font-semibold py-2.5 px-5 z-50'>
             Book a call
           </Link>
           <button
