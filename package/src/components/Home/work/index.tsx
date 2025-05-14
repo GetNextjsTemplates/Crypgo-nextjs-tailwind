@@ -21,44 +21,46 @@ const Work = () => {
 
   const services = [
     {
-      icon: '/images/icons/icon-consulting.svg',
-      text: 'Blockchain Consulting',
+      icon: '/images/chooseus/chooseus-icon-1.svg',
+      text: 'Designed for crypto trading platforms',
     },
     {
-      icon: '/images/icons/icon-blockchain.svg',
-      text: 'Blockchain Solutions',
+      icon: '/images/chooseus/chooseus-icon-2.svg',
+      text: 'Kickstart your crypto website today',
     },
     {
-      icon: '/images/icons/icon-Services.svg',
-      text: 'Custom Development',
+      icon: '/images/chooseus/chooseus-icon-3.svg',
+      text: 'Launch your blockchain platform today',
     },
   ]
 
   return (
-    <section className='md:pt-28' id='work'>
-      <div className='container px-4 mx-auto lg:max-w-(--breakpoint-xl) px-4'>
+    <section className='' id='work'>
+      <div className='container px-4 mx-auto lg:max-w-(--breakpoint-xl)'>
         <div ref={ref} className='grid grid-cols-12 items-center'>
           <motion.div
             {...bottomAnimation}
             className='lg:col-span-7 col-span-12'>
-            <p className='sm:text-28 text-18 text-white'>
-              Work with <span className='text-primary'>us</span>
-            </p>
-            <h2 className='sm:text-40 text-30 text-white lg:w-full md:w-70% font-medium'>
-              Successfully launch your blockchain project.
-            </h2>
+            <div className='flex flex-col gap-3'>
+              <p className="text-white font-medium">
+                Why choose <span className='text-primary'>crypto</span>
+              </p>
+              <h2 className='sm:text-40 text-30 text-white lg:w-full md:w-70% font-medium'>
+                Features of the crypto framer mobile application
+              </h2>
+            </div>
             <div className='grid md:grid-cols-2 gap-7 mt-11'>
               {services.map((service, index) => (
                 <div key={index} className='flex items-center gap-5'>
-                  <div className='px-5 py-5 bg-light_grey/30 rounded-full'>
+                  <div className='p-3 bg-light_grey/30 rounded-full'>
                     <Image
                       src={service.icon}
                       alt={`${service.text} icon`}
-                      width={40}
-                      height={40}
+                      width={25}
+                      height={25}
                     />
                   </div>
-                  <p className='text-24 text-muted'>{service.text}</p>
+                  <p className='text-white font-medium'>{service.text}</p>
                 </div>
               ))}
             </div>

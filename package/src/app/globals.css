@@ -85,7 +85,7 @@
   --text-86: 5.375rem;
   --text-86--line-height: 1.2;
 
-  --background-image-start: url('/images/work/bg-start.png');
+  --background-image-start: url('/images/work/bg-start.svg');
   --background-image-perk: url('/images/perks/perk-bg.png');
 
   --blur-220: 220px;
@@ -112,7 +112,7 @@
 
 @layer utilities {
   .container {
-    @apply w-full max-w-8xl mx-auto;
+    @apply w-full max-w-8xl mx-auto py-0 sm:px-7 px-5;
   }
 }
 

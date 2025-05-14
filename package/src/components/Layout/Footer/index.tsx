@@ -10,10 +10,11 @@ const Footer: FC = () => {
   return (
     <footer className='pt-16 bg-darkmode'>
       <div className='container px-4'>
-        <div className='grid grid-cols-1 sm:grid-cols-12 lg:gap-20 md:gap-6 sm:gap-12 gap-6  pb-16'>
-          <div className='lg:col-span-4 md:col-span-6 col-span-6'>
+        <div className='grid grid-cols-1 sm:grid-cols-11 lg:gap-20 md:gap-6 sm:gap-12 gap-6  pb-16'>
+          <div className='lg:col-span-4 md:col-span-6 col-span-6 flex flex-col gap-6'>
             <Logo />
-            <div className='flex gap-6 items-center mt-8 relative z-1'>
+            <p className='text-white/60'>Transform your crypto business with Crypgo Framer, a template for startups and blockchain services.</p>
+            <div className='flex gap-6 items-center relative z-1'>
               <Link href='#' className='group'>
                 <Icon
                   icon='fa6-brands:facebook-f'
@@ -39,10 +40,6 @@ const Footer: FC = () => {
                 />
               </Link>
             </div>
-            <h3 className='text-white text-24 font-medium sm:mt-20 mt-12'>
-              2025 Copright
-            </h3>
-            <Link className='text-white text-24 font-medium sm:mt-20 mt-12 hover:text-primary' target='_blank' href="https://getnextjstemplates.com/">GetNextJs Templates</Link>
           </div>
           <div className='lg:col-span-2 md:col-span-3 col-span-6'>
             <h4 className='text-white mb-4 font-medium text-24'>Links</h4>
@@ -51,7 +48,7 @@ const Footer: FC = () => {
                 <li key={index} className='pb-4'>
                   <Link
                     href={item.href}
-                    className='text-white hover:text-primary text-17'>
+                    className='text-white/60 hover:text-primary text-17'>
                     {item.label}
                   </Link>
                 </li>
@@ -65,36 +62,22 @@ const Footer: FC = () => {
                 <li key={index} className='pb-4'>
                   <Link
                     href={item.herf}
-                    className='text-white hover:text-primary text-17'>
+                    className='text-white/60 hover:text-primary text-17'>
                     {item.label}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
-          <div className='lg:col-span-4 md:col-span-4 col-span-6'>
-            <h3 className='text-white text-24 font-medium'>Subscribe</h3>
-            <p className='text-muted/60 text-18 mt-5'>
-              Subscribe to get the latest
-              <br /> news form us
-            </p>
-            <div className='relative lg:w-80%'>
-              <input
-                type='email'
-                name='mail'
-                id='mail'
-                placeholder='Enter Email'
-                className='bg-transparent border border-dark_border/60 py-4 text-white rounded-lg w-full mt-6 px-6'
-              />
-              <Icon
-                icon='tabler:send'
-                width='24'
-                height='24'
-                className='text-primary absolute right-7 bottom-4'
-              />
+          <div className='lg:col-span-3 md:col-span-4 col-span-6'>
+            <h3 className='text-white text-24 font-medium mb-4'>Download app</h3>
+            <div className='flex flex-col gap-4'>
+              <Image src={"/images/footer/app-store-bedge.svg"} alt='play-store-bedge' width={126} height={23} />
+              <Image src={"/images/footer/app-store.svg"} alt='play-store-bedge' width={126} height={23} />
             </div>
           </div>
         </div>
+        <p className='text-white/40 text-center py-8 border-t border-white/20'>Copyright ©2025 Crypgo. All rights reserved</p>
       </div>
     </footer>
   )

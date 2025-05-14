@@ -21,13 +21,14 @@ const TimeLine = () => {
             whileInView={{ y: 0, opacity: 1 }}
             initial={{ y: '-100%', opacity: 0 }}
             transition={{ duration: 0.6 }}>
-            <p className='text-muted sm:text-28 text-18 mb-9'>
-              Development <span className='text-primary'>timeline</span>
-            </p>
-            <h2 className='text-white sm:text-40 text-30 font-medium lg:w-80% mx-auto mb-20'>
-              We can enter at any point or help you all the way through the
-              development cycle.
-            </h2>
+            <div className='flex flex-col gap-4'>
+              <p className='text-white font-medium'>
+                We deliver <span className='text-primary'>best solution</span>
+              </p>
+              <h2 className='text-white sm:text-40 text-30 font-medium lg:w-80% mx-auto mb-20'>
+                One application with multiple options to give you freedom of buying & selling
+              </h2>
+            </div>
           </motion.div>
           <motion.div
             whileInView={{ scale: 1, opacity: 1 }}
@@ -47,12 +48,12 @@ const TimeLine = () => {
                 <div className='text-right'>
                   <h5 className='text-muted text-28 mb-3'>Planning</h5>
                   <p className='text-18 text-muted/60'>
-                    Map the project&apos;s scope and architecture
+                    Map the crypto projects scope with framer template
                   </p>
                 </div>
                 <div className='bg-light_grey/45 backdrop-blur-xs px-6 py-2 h-fit rounded-full'>
                   <Image
-                    src='/images/timeline/icon-planning.svg'
+                    src='/images/solution/solution-icon-1.svg'
                     alt='Planning'
                     width={44}
                     height={44}
@@ -63,7 +64,7 @@ const TimeLine = () => {
               <div className='absolute lg:top-40 top-36 lg:right-0 -right-20 w-72 flex items-center gap-6'>
                 <div className='bg-light_grey/45 backdrop-blur-xs p-6 h-fit rounded-full'>
                   <Image
-                    src='/images/timeline/icon-refinement.svg'
+                    src='/images/solution/solution-icon-2.svg'
                     alt='Refinement'
                     width={44}
                     height={44}
@@ -72,7 +73,7 @@ const TimeLine = () => {
                 <div className='text-left'>
                   <h5 className='text-muted text-28 mb-3'>Refinement</h5>
                   <p className='text-18 text-muted/60'>
-                    Refine and improve your solution
+                  Refine & improve your crypto landing page
                   </p>
                 </div>
               </div>
@@ -80,12 +81,12 @@ const TimeLine = () => {
                 <div className='text-right'>
                   <h5 className='text-muted text-28 mb-3'>Prototype</h5>
                   <p className='text-18 text-muted/60'>
-                    Build a working prototype to test your product
+                  Build crypto website test for your product
                   </p>
                 </div>
                 <div className='bg-light_grey/45 backdrop-blur-xs px-6 py-2 h-fit rounded-full'>
                   <Image
-                    src='/images/timeline/icon-prototype.svg'
+                    src='/images/solution/solution-icon-3.svg'
                     alt='Prototype'
                     width={44}
                     height={44}
@@ -96,7 +97,7 @@ const TimeLine = () => {
               <div className='absolute lg:bottom-48 bottom-36 lg:right-0 -right-20 w-72 flex items-center gap-6'>
                 <div className='bg-light_grey/45 backdrop-blur-xs px-6 py-2 h-fit rounded-full'>
                   <Image
-                    src='/images/timeline/icon-support.svg'
+                    src='/images/solution/solution-icon-4.svg'
                     alt='Scale and support'
                     width={44}
                     height={44}
@@ -108,7 +109,7 @@ const TimeLine = () => {
                     Support
                   </h5>
                   <p className='text-18 text-muted/60'>
-                    Deploy the product and ensure full support by us
+                  Deploy product live and ensure expert support
                   </p>
                 </div>
               </div>

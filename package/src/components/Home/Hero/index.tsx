@@ -7,6 +7,7 @@ import SellCrypto from './sell-form'
 import CardSlider from './slider'
 import { useEffect, useRef, useState, useCallback } from 'react'
 import { Icon } from '@iconify/react/dist/iconify.js'
+import BrandLogo from '../BrandLogo'
 
 const Hero = () => {
   const [isBuying, setIsBuyingOpen] = useState(false)
@@ -53,73 +54,48 @@ const Hero = () => {
 
   return (
     <section
-      className='relative md:pt-40 md:pb-28 py-20 overflow-hidden z-1'
+      className='relative py-24 pt-48 overflow-hidden z-1'
       id='main-banner'>
-      <div className='container px-4'>
-        <div className='grid grid-cols-12'>
-          <motion.div {...leftAnimation} className='lg:col-span-5 col-span-12'>
-            <div className='flex gap-6 items-center lg:justify-start justify-center mb-5 mt-24'>
-              <Image
-                src='/images/icons/icon-bag.svg'
-                alt='icon'
-                width={40}
-                height={40}
-              />
-              <p className='text-white sm:text-28 text-18 mb-0'>
-                Crypto On The <span className='text-primary'>Go</span>
-              </p>
+      <div className='container'>
+        <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
+          <motion.div {...leftAnimation} className='flex flex-col gap-10'>
+            <div className='flex flex-col gap-4 text-center md:text-left'>
+              <div className='flex gap-6 items-center lg:justify-start justify-center'>
+                <div className='py-1.5 px-4 bg-primary/10 rounded-full border border-white/10'>
+                  <span className='text-primary font-medium'>Future of crypto trading</span>
+                </div>
+              </div>
+              <h1 className='font-medium xl:text-[72px] lg:text-6xl md:text-54 sm:text-5xl text-4xl md:text-start text-center text-white'>
+                Fast and Secure Cryptocurrency Exchange
+              </h1>
+              <p className='text-white'>Trade cryptocurrencies with ease, security, and advanced features on our cutting-edge platform.</p>
             </div>
-            <h1 className='font-medium lg:text-76 md:text-70 text-54 lg:text-start text-center text-white mb-10'>
-              Buy and Sell <span className='text-primary'>Crypto</span> of your{' '}
-              <span className='text-primary'>choice</span>!
-            </h1>
             <div className='flex items-center md:justify-start justify-center gap-8'>
               <button
-                className='bg-primary border border-primary rounded-lg text-21 font-medium hover:bg-transparent hover:text-primary text-darkmode py-2 px-7 z-50'
+                className='bg-primary hover:bg-primary/80 flex items-center gap-2 border border-primary rounded-lg text-21 font-medium text-darkmode py-2 px-7 cursor-pointer'
                 onClick={() => setIsBuyingOpen(true)}>
                 Buy Crypto
+                <Image src={"/images/icons/icon-arrow.svg"} alt='arrow-icon' width={20} height={20}/>
               </button>
-              <button
-                className='bg-transparent border border-primary rounded-lg text-21 font-medium hover:bg-primary hover:text-darkmode text-primary py-2 px-7'
-                onClick={() => setIsSellingOpen(true)}>
-                Sell Crypto
-              </button>
-            </div>
-            <div className='flex items-center md:justify-start justify-center gap-12 mt-20'>
-              <Link href='#' className='hover:scale-110 duration-300'>
-                <Image
-                  src='/images/hero/playstore.png'
-                  alt='Play Store'
-                  width={240}
-                  height={70}
-                />
-              </Link>
-              <Link href='#' className='hover:scale-110 duration-300'>
-                <Image
-                  src='/images/hero/applestore.png'
-                  alt='App Store'
-                  width={240}
-                  height={70}
-                />
-              </Link>
             </div>
           </motion.div>
           <motion.div
             {...rightAnimation}
-            className='col-span-7 lg:block hidden'>
-            <div className='ml-20 -mr-64'>
+            className=''>
+            <div className='w-full h-full'>
               <Image
-                src='/images/hero/banner-image.png'
+                src='/images/hero/hero-banner-img.png'
                 alt='Banner'
-                width={1150}
-                height={1150}
+                width={584}
+                height={582}
+                className='w-full h-full'
               />
             </div>
           </motion.div>
         </div>
-        <CardSlider />
+        <BrandLogo/>
+        <CardSlider/>
       </div>
-      <div className='absolute w-50 h-50 bg-linear-to-bl from-tealGreen from-50% to-charcoalGray to-60% blur-400 rounded-full -top-64 -right-14 -z-1'></div>
 
       {/* Modals for Buy and Sell */}
       {isBuying && (

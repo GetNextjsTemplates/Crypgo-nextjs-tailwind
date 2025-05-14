@@ -6,13 +6,14 @@ const Perks = () => {
     <section className='pb-28 relative'>
       <div className='container px-4 relative z-2'>
         <div className='text-center'>
-          <p className="text-muted sm:text-28 text-18 mb-4 pb-6 relative after:content-[''] after:w-8 after:h-0.5 after:bg-primary after:absolute after:bottom-0 after:left-1/2">
-            Always By <span className='text-primary'>your side</span>
-          </p>
-          <h2 className='text-white sm:text-40 text-30 font-medium'>
-            Be the first to use our Cryo<span className='text-primary'>go</span>
-            !
-          </h2>
+          <div className='flex flex-col gap-4'>
+            <p className="text-muted text-base relative">
+              Always By <span className='text-primary'>your side</span>
+            </p>
+            <h2 className='text-white sm:text-40 text-30 font-medium'>
+              Be the first to use our Cryogo!
+            </h2>
+          </div>
           <div className='mt-16 border border-border/20 grid lg:grid-cols-3 sm:grid-cols-2 py-16 gap-10 px-20 rounded-3xl sm:bg-perk bg-dark_grey/35 lg:bg-bottom bg-center bg-no-repeat'>
             {perksData.map((item, index) => (
               <div

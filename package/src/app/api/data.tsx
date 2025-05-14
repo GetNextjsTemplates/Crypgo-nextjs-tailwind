@@ -41,7 +41,7 @@ export const pricedeta: {
     padding: "px-4 py-2",
   },
   {
-    title: "Bitcoin Cash ",
+    title: "Polkadot",
     short: "BTC/USD",
     icon: "/images/icons/icon-bitcoin-circle.svg",
     background: "bg-warning/20",
@@ -88,24 +88,28 @@ export const pricedeta: {
 
 export const portfolioData: { image: string; title: string }[] = [
   {
-    image: "/images/portfolio/icon-wallet.svg",
+    image: "/images/portfolio/portfolio-icon-1.svg",
     title: "Manage your portfolio",
   },
   {
-    image: "/images/portfolio/icon-vault.svg",
+    image: "/images/portfolio/portfolio-icon-2.svg",
     title: "Vault protection",
   },
   {
-    image: "/images/portfolio/icon-mobileapp.svg",
+    image: "/images/portfolio/portfolio-icon-3.svg",
     title: "Mobile apps",
   },
 ];
 
 export const upgradeData: { title: string }[] = [
   { title: "100% Secure" },
-  { title: "A Fraction of the Cost" },
-  { title: "More Durable" },
-  { title: "Easier to Use" },
+  { title: "Free figma file" },
+  { title: "A fraction of the cost" },
+  { title: "Powerful in performance" },
+  { title: "More durable" },
+  { title: "Designed for crypto" },
+  { title: "Easier to use" },
+  { title: " 100% free framer template" },
 ];
 
 export const perksData: {
@@ -115,19 +119,19 @@ export const perksData: {
   space: string;
 }[] = [
   {
-    icon: "/images/perks/icon-support.svg",
+    icon: "/images/perks/peak-icon-1.svg",
     title: "24/7 Support",
     text: "Need help? Get your requests solved quickly via support team.",
     space: "lg:mt-8",
   },
   {
-    icon: "/images/perks/icon-community.svg",
+    icon: "/images/perks/peak-icon-2.svg",
     title: "Community",
     text: "Join the conversations on our worldwide OKEx communities",
     space: "lg:mt-14",
   },
   {
-    icon: "/images/perks/icon-academy.svg",
+    icon: "/images/perks/peak-icon-3.svg",
     title: "Academy",
     text: "Learn blockchain and<br /> crypto for free.",
     space: "lg:mt-4",

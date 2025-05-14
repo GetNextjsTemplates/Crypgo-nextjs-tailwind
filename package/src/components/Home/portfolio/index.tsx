@@ -25,34 +25,35 @@ const Portfolio = () => {
             whileInView={{ y: 0, opacity: 1 }}
             initial={{ y: '100%', opacity: 0 }}
             transition={{ duration: 0.6 }}>
-            <p className='sm:text-28 text-18 text-muted mb-4'>
-              Cryptocurrency <span className='text-primary'>Portfolio</span>
-            </p>
-            <h2 className='text-white sm:text-40 text-30 mb-4 font-medium'>
-              Create your crypto portfolio today with Cryp
-              <span className='text-primary'>Go</span>!
-            </h2>
+            <div className='flex flex-col gap-4'>
+              <p className='text-white font-medium'>
+                Crypto landing page <span className='text-primary'>template</span>
+              </p>
+              <h2 className='text-white sm:text-40 text-30 mb-4 font-medium'>
+                Create your cryptocurrency portfolio today
+              </h2>
+            </div>
             <p className='text-muted/60 text-18'>
-              Coinbase has a variety of features that make it the best
-              <br className='md:block hidden' /> place to start trading.
+              Coinbase has a variety of features that make it the best place
+              to start trading.
             </p>
 
-            <table className='w-full sm:w-[80%]'>
+            <table className='w-full sm:w-[80%] mt-10'>
               <tbody>
                 {portfolioData.map((item, index) => (
                   <tr key={index} className='border-b border-dark_border/10'>
                     <td className='py-5'>
-                      <div className='bg-primary/20 p-4 rounded-full w-fit'>
+                      <div className='bg-primary/20 p-3 rounded-full w-fit'>
                         <Image
                           src={item.image}
                           alt={item.title}
-                          width={35}
-                          height={35}
+                          width={24}
+                          height={24}
                         />
                       </div>
                     </td>
                     <td className='py-5'>
-                      <h4 className='text-muted sm:text-28 text-22 ml-5'>
+                      <h4 className='text-muted text-xl ml-5'>
                         {item.title}
                       </h4>
                     </td>
