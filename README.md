@@ -2,7 +2,6 @@
 
 [View Live Preview](https://crypgo-nextjs-tailwind.vercel.app/) | [Download](https://getnextjstemplates.com/products/crypgo-nextjs-tailwind-free-landing-page-template) | [CheckOut Nextjs Templates](https://getnextjstemplates.com/)
 
-
 <a target="_blank" href="https://getnextjstemplates.com/products/crypgo-nextjs-tailwind-free-landing-page-template">
   <img src="https://adminmart.github.io/template_api/images/website-template/Crypgo-Nextjs-tailwind-Free-Landing-Page-Template.jpg" />
 </a>
