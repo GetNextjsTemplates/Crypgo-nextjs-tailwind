@@ -32,7 +32,7 @@ export default function ScrollToTop() {
   return (
     <div className="fixed bottom-8 right-8 z-999">
       <div className="flex gap-2.5 items-center">
-        <Link href={"https://getnextjstemplates.com/products/crypgo-nextjs-tailwind-free-landing-page-template"} className="hidden lg:block bg-primary hover:bg-darkPrimary text-sm text-secondary font-medium px-4 py-3.5 leading-none rounded-lg text-nowrap">
+        <Link href={"https://getnextjstemplates.com/products/crypgo-nextjs-tailwind-free-landing-page-template"} className="hidden lg:block bg-primary hover:bg-primary/80 text-sm text-black font-medium px-4 py-3.5 leading-none rounded-lg text-nowrap">
           Download Now
         </Link>
         {isVisible && (
